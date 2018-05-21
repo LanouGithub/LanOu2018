@@ -221,7 +221,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Sprites\Const\ConstDate.cs" />
-    <Compile Include="Assets\Sprites\Manager\GameManager.cs" />
     <Compile Include="Assets\Sprites\Manager\UIManager.cs" />
     <Compile Include="Assets\Sprites\UI\UIBase.cs" />
   </ItemGroup>

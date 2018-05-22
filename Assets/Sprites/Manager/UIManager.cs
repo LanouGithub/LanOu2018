@@ -4,16 +4,8 @@ using UnityEngine;
 /// <summary>
 /// UI界面管理
 /// </summary>
-public class UIManager : MonoBehaviour
+public class UIManager : GameManager<UIManager>
 {
-    static UIManager _instance;
-
-    //Instance访问器
-    public static UIManager Instance
-    {
-        get { return _instance; }
-    }
-
     Stack<IUIBase> UIStack = new Stack<IUIBase>();
     //保存所有进栈的UI界面
     Dictionary<string, IUIBase> CurrentUI = new Dictionary<string, IUIBase>();
@@ -23,9 +15,9 @@ public class UIManager : MonoBehaviour
     /// <summary>
     /// UI界面管理的初始化
     /// </summary>
-    private void Awake()
+    protected override void Awake()
     {
-        _instance = this;
+        base.Awake();
         LoadUIPrefabName(ConstDate.UIPrefabsPath);
     }
 

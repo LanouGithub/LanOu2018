@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// 泛型单例管理类
 /// </summary>
-public class GameManager<T> : MonoBehaviour where T : GameManager<T>
+public class ManagerBase<T> : MonoBehaviour where T : ManagerBase<T>
 {
     static T _instance;
     public static T Instance
@@ -20,7 +20,6 @@ public class GameManager<T> : MonoBehaviour where T : GameManager<T>
             return _instance;
         }
     }
-
     //用于其它管理类的单例初始化
     protected virtual void Awake()
     {

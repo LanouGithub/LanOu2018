@@ -212,24 +212,29 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Users/Administrator/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>C:/Users/Administrator/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
     <Reference Include="LitJson">
       <HintPath>Assets/Json/LitJson.dll</HintPath>
     </Reference>
     <Reference Include="System.Json">
       <HintPath>Assets/Json/System.Json.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Users/Administrator/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>C:/Users/Administrator/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Sprites\Const\ConstDate.cs" />
+    <Compile Include="Assets\Sprites\Data\ConstData\ConstData.cs" />
+    <Compile Include="Assets\Sprites\Data\EnemyData.cs" />
+    <Compile Include="Assets\Sprites\Data\ItemData.cs" />
+    <Compile Include="Assets\Sprites\Data\MapData.cs" />
+    <Compile Include="Assets\Sprites\Data\PlayerData.cs" />
     <Compile Include="Assets\Sprites\EnumData\MusicType.cs" />
     <Compile Include="Assets\Sprites\Manager\AudioManager.cs" />
-    <Compile Include="Assets\Sprites\Manager\GameManager.cs" />
+    <Compile Include="Assets\Sprites\Manager\ManagerBase.cs" />
+    <Compile Include="Assets\Sprites\Manager\ResourcesManager.cs" />
     <Compile Include="Assets\Sprites\Manager\UIManager.cs" />
     <Compile Include="Assets\Sprites\UI\UIBase.cs" />
   </ItemGroup>
@@ -239,7 +244,8 @@
     <None Include="Assets\Materials\临时添加.txt" />
     <None Include="Assets\Models\临时添加.txt" />
     <None Include="Assets\PhysicsMaterials\临时添加.txt" />
-    <None Include="Assets\Resources\Audios\临时添加.txt" />
+    <None Include="Assets\Resources\Audios\BGMusic\临时添加.txt" />
+    <None Include="Assets\Resources\Audios\SoundEffect\临时添加.txt" />
     <None Include="Assets\Resources\Prefabs\UIPrefabs\临时添加.txt" />
     <None Include="Assets\Resources\Texture\BG\临时添加.txt" />
     <None Include="Assets\Resources\Texture\Enemy\临时添加.txt" />

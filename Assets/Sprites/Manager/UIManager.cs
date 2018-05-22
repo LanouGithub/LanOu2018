@@ -4,7 +4,7 @@ using UnityEngine;
 /// <summary>
 /// UI界面管理
 /// </summary>
-public class UIManager : GameManager<UIManager>
+public class UIManager : ManagerBase<UIManager>
 {
     Stack<IUIBase> UIStack = new Stack<IUIBase>();
     //保存所有进栈的UI界面
@@ -18,7 +18,7 @@ public class UIManager : GameManager<UIManager>
     protected override void Awake()
     {
         base.Awake();
-        LoadUIPrefabName(ConstDate.UIPrefabsPath);
+        LoadUIPrefabName(ConstData.UIPrefabsPath);
     }
 
     /// <summary>

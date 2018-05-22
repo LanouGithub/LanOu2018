@@ -8,6 +8,7 @@ public class ConstDate
     #endregion
 
     #region 音乐
+    public const string Path = "音乐";
     #endregion
 
     #region 音效

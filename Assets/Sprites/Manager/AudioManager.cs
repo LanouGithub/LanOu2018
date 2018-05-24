@@ -11,7 +11,7 @@ public class AudioManager : ManagerBase<AudioManager>
     AudioSource bgMusic;
 
     //保存所有音效播放器
-    Dictionary<string, AudioSource> effectMusic;
+    Dictionary<string, AudioSource> effectMusic = new Dictionary<string, AudioSource>();
 
     //初始化播放器管理类
     protected override void Awake()
@@ -36,6 +36,14 @@ public class AudioManager : ManagerBase<AudioManager>
         return null;
     }
 
+    void FindAlleffectMusicAudioSource()
+    {
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            effectMusic.Add(transform.GetChild(i).name, transform.GetChild(i).GetComponent<AudioSource>());
+        }
+    }
+
     //背景播放器静音开关
     public bool BGMute
     {
@@ -52,6 +60,7 @@ public class AudioManager : ManagerBase<AudioManager>
     //音效播放器静音开关
     public void EffectMute(bool isMute)
     {
+        FindAlleffectMusicAudioSource();
         foreach (string key in effectMusic.Keys)
         {
             effectMusic[key].mute = isMute;
@@ -74,6 +83,7 @@ public class AudioManager : ManagerBase<AudioManager>
     //控制音效音量大小
     public void EffectVolmue(float value)
     {
+        FindAlleffectMusicAudioSource();
         foreach (string key in effectMusic.Keys)
         {
             effectMusic[key].volume = value;
@@ -94,6 +104,7 @@ public class AudioManager : ManagerBase<AudioManager>
     //总音量控制
     public float AudioVolume(float value)
     {
+        FindAlleffectMusicAudioSource();
         bgMusic.volume = value;
         foreach (string key in effectMusic.Keys)
         {

@@ -1,7 +1,7 @@
 ﻿/// <summary>
 /// 存储所有常量路径
 /// </summary>
-public class ConstData
+public struct ConstData
 {
     #region 所有UI预制体文件夹
     public const string UIPrefabsPath = "Prefabs/UIPrefabs";

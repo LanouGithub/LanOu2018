@@ -1,26 +1,23 @@
-﻿/// <summary>
+﻿using UnityEngine;
+/// <summary>
 /// 字符串拼接工具
 /// </summary>
 public struct StringSplicingTool
 {
     public static string StringSplicing(string stringA, string stringB)
     {
+
+        Debug.Log(string.Format("{0}{1}", stringA, stringB));
         return string.Format("{0}{1}", stringA, stringB);
     }
-    public static string StringSplicing(string stringA, string stringB, string stringC)
+    public static string StringSplicing(string[] stringN)
     {
-        return string.Format("{0}{1}{2}", stringA, stringB, stringC);
-    }
-    public static string StringSplicing(string stringA, string stringB, string stringC, string stringD)
-    {
-        return string.Format("{0}{1}{2}", stringA, stringB, stringC, stringD);
-    }
-    public static string StringSplicing(string stringA, string stringB, string stringC, string stringD, string stringE)
-    {
-        return string.Format("{0}{1}{2}", stringA, stringB, stringC, stringD, stringE);
-    }
-    public static string StringSplicing(string stringA, string stringB, string stringC, string stringD, string stringE, string stringF)
-    {
-        return string.Format("{0}{1}{2}", stringA, stringB, stringC, stringD, stringE, stringF);
+        string SplicingString = stringN[0];
+        for (int i = 1; i < stringN.Length; i++)
+        {
+            SplicingString = string.Format("{0}{1}", SplicingString, stringN[i]);
+        }
+        Debug.Log(SplicingString);
+        return SplicingString;
     }
 }

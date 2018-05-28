@@ -229,18 +229,19 @@
     <Compile Include="Assets\Sprites\Data\ConstData\ConstData.cs" />
     <Compile Include="Assets\Sprites\Data\EnemyData.cs" />
     <Compile Include="Assets\Sprites\Data\EnumData\MusicType.cs" />
-    <Compile Include="Assets\Sprites\Data\EnumData\TableName.cs" />
     <Compile Include="Assets\Sprites\Data\ItemData.cs" />
     <Compile Include="Assets\Sprites\Data\PlayerData.cs" />
     <Compile Include="Assets\Sprites\Data\ReadData.cs" />
     <Compile Include="Assets\Sprites\Data\WriteData.cs" />
     <Compile Include="Assets\Sprites\Manager\AudioManager.cs" />
     <Compile Include="Assets\Sprites\Manager\DataBase.cs" />
+    <Compile Include="Assets\Sprites\Manager\GamePlatformManager.cs" />
     <Compile Include="Assets\Sprites\Manager\ManagerBase.cs" />
     <Compile Include="Assets\Sprites\Manager\ResourcesManager.cs" />
     <Compile Include="Assets\Sprites\Manager\UIManager.cs" />
     <Compile Include="Assets\Sprites\ToolClass\StringSplicingTool.cs" />
     <Compile Include="Assets\Sprites\UI\UIBase.cs" />
+    <Compile Include="Assets\Sprites\UI\UISceneWidget.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Animator\临时添加.txt" />
@@ -255,12 +256,13 @@
     <None Include="Assets\Resources\Texture\Enemy\临时添加.txt" />
     <None Include="Assets\Resources\Texture\Icon\临时添加.txt" />
     <None Include="Assets\Resources\Texture\Item\临时添加.txt" />
-    <None Include="Assets\Resources\Texture\Map\临时添加.txt" />
     <None Include="Assets\Resources\Texture\Player\临时添加.txt" />
     <None Include="Assets\Resources\Texture\UI\临时添加.txt" />
     <None Include="Assets\Scene\临时添加.txt" />
+    <None Include="Assets\Sprites\AI\临时添加.txt" />
     <None Include="Assets\Sprites\Player\临时添加.txt" />
     <None Include="Assets\StreamingAssets\Json\临时添加.txt" />
+    <None Include="Assets\StreamingAssets\SQLite\临时添加.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

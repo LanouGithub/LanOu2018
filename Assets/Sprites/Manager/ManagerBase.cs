@@ -14,8 +14,8 @@ public class ManagerBase<T> : MonoBehaviour where T : ManagerBase<T>
         {
             if (_instance == null)
             {
-                GameObject obj = new GameObject(typeof(T).Name);
-                _instance = obj.AddComponent<T>();
+                _instance = new GameObject(typeof(T).Name).AddComponent<T>();
+                DontDestroyOnLoad(_instance);
             }
             return _instance;
         }

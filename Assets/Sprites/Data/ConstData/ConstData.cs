@@ -59,4 +59,59 @@ public struct ConstData
     /// </summary>
     public const string Attack = "attack";
     #endregion
+
+    #region 游戏数据库表名
+    public const string TableName01 = "还没有";
+    #endregion
+
+    #region 数据库命令大全
+    /// <summary>
+    /// 查询命令SELECT:SELECT
+    /// </summary>
+    public const string SELECT = "SELECT ";
+    /// <summary>
+    /// 带*的FROM命令:*FROM
+    /// </summary>
+    public const string FROM01 = " *FROM ";
+    /// <summary>
+    /// 没有*的FROM命令:FROM
+    /// </summary>
+    public const string FROM02 = " FROM ";
+    /// <summary>
+    /// 指定范围命令:WHERE
+    /// </summary>
+    public const string WHERE = " WHERE ";
+    /// <summary>
+    /// 删除命名:DELETE
+    /// </summary>
+    public const string DELETE = "DELETE ";
+    /// <summary>
+    /// 过滤重复数据:DISTINCT
+    /// </summary>
+    public const string DISTINCT = " DISTINCT ";
+    /// <summary>
+    /// 插入数据:INSERT INTO
+    /// </summary>
+    public const string InsertLine01 = "INSERT INTO ";
+    /// <summary>
+    /// 插入数据:VALUES(
+    /// </summary>
+    public const string InsertLine02 = " VALUES(";
+    /// <summary>
+    /// 删除表:DROP TABLE
+    /// </summary>
+    public const string DeleteTable = "DROP TABLE ";
+    /// <summary>
+    /// 排序:ORDER BY
+    /// </summary>
+    public const string AscendingOrder01 = " ORDER BY ";
+    /// <summary>
+    /// 升序:ASC
+    /// </summary>
+    public const string AscendingOrder02 = " ASC";
+    /// <summary>
+    /// 降序:DESC
+    /// </summary>
+    public const string DescendingOrder02 = " DESC";
+    #endregion
 }

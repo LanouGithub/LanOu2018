@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// 读数据
+/// 读数据功能类
 /// </summary>
 public class ReadData
 {
